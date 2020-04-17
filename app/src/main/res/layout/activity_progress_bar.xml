@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".screen.ProgressBarActivity">
 
@@ -11,6 +10,21 @@
         android:id="@+id/customProgressRoundedRectangle"
         android:layout_width="@dimen/custom_progress_width"
         android:layout_height="@dimen/custom_progress_height"
-        android:layout_marginTop="@dimen/custom_progress_margin" />
+        android:layout_marginTop="@dimen/custom_progress_margin"
+        android:layout_marginBottom="100dp" />
+
+    <com.example.retrofittutorialpart1.textview.TextViewExpandableAnimation
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tvea_expandBitmap="@drawable/icon_green_arrow_down"
+        app:tvea_expandLines="1"
+        app:tvea_shrinkBitmap="@drawable/icon_green_arrow_up"
+        app:tvea_textContentColor="@color/color_gray_light_content_text"
+        app:tvea_textContentSize="@dimen/sp_txt_size_content"
+        app:tvea_textExpand="@string/expand"
+        app:tvea_textShrink="@string/shrink"
+        app:tvea_textStateColor="@color/colorPrimary" />
 
 </LinearLayout>

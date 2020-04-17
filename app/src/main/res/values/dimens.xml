@@ -7,6 +7,9 @@
     <dimen name="custom_progress_width">280dp</dimen>
     <dimen name="custom_progress_height">10.96dp</dimen>
     <dimen name="custom_progress_margin">10dp</dimen>
-    
+
     <dimen name="wrap_content"></dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="sp_txt_size_content">14sp</dimen>
 </resources>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.example.retrofittutorialpart1.R;
 import com.example.retrofittutorialpart1.progress.CustomProgress;
+import com.example.retrofittutorialpart1.textview.TextViewExpandableAnimation;
 
 public class ProgressBarActivity extends AppCompatActivity {
 
@@ -20,5 +21,10 @@ public class ProgressBarActivity extends AppCompatActivity {
         customProgressRoundedRectangle.useRoundedRectangleShape(70.0f);
         customProgressRoundedRectangle.setProgressColor(res.getColor(R.color.blue_001));
         customProgressRoundedRectangle.setProgressBackgroundColor(res.getColor(R.color.blue_002));
+
+        String text = getString(R.string.tips);
+
+        TextViewExpandableAnimation tvExpand = findViewById(R.id.tv_expand);
+        tvExpand.setText(text + text + text + text);
     }
 }
