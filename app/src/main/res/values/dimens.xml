@@ -7,4 +7,6 @@
     <dimen name="custom_progress_width">280dp</dimen>
     <dimen name="custom_progress_height">10.96dp</dimen>
     <dimen name="custom_progress_margin">10dp</dimen>
+    
+    <dimen name="wrap_content"></dimen>
 </resources>

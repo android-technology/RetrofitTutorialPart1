@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.Spannable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -17,8 +18,11 @@ import android.widget.RatingBar;
 import android.widget.Toast;
 
 import com.example.retrofittutorialpart1.R;
+import com.example.retrofittutorialpart1.textview.ExpandableTextView;
 
 public class ProductReatingReviewActivity extends AppCompatActivity {
+
+    Spannable.Factory spFactory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,12 @@ public class ProductReatingReviewActivity extends AppCompatActivity {
                 showDialog(ProductReatingReviewActivity.this, getLayoutInflater());
             }
         });
+
+        // Textview Custom
+        spFactory = Spannable.Factory.getInstance();
+        String text = "còn xã hội này, sống muốn được người ta tôn trọng thì mình phải tôn trọng người khác trước, Muốn người ta quý mình thì mình phải quý người ta trước. Những người cho mình vay tiền, lúc mình khó khăn, lúc mình khổ, lúc mình vỡ nợ, không phải vì người ta ngu, không phải vì người ta dại, mà vì chính người đó mình nên tôn trọng, bởi những người đó coi mình là anh em bạn bè thì những lúc mình vỡ nợ, khó khăn, khổ người ta mới đưa tiền cho mình vay.";
+        final ExpandableTextView textView = findViewById(R.id.text_custom);
+        textView.setText(text);
     }
 
     public void showDialog(Context context, LayoutInflater inflater) {

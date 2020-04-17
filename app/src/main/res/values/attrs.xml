@@ -47,4 +47,8 @@ limitations under the License.
         <attr name="rcTextProgress" format="string" />
     </declare-styleable>
 
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer" />
+    </declare-styleable>
+
 </resources>

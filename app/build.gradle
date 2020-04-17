@@ -50,5 +50,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.android.volley/volley
     implementation 'com.android.volley:volley:1.1.1'
 
+    // Read more TextView
+    implementation 'com.borjabravo:readmoretextview:2.0.1'
 
 }
