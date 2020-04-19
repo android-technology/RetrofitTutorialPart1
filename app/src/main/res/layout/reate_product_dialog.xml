@@ -49,15 +49,15 @@
 
     <RatingBar
         android:id="@+id/rb_rate_product"
-        style="style/ProductRatingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ProductRatingBar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:numStars="5"
-        android:rating="3.5"
         android:scaleX="0.5"
-        android:scaleY="0.5" />
+        android:scaleY="0.5"
+        android:rating="3.5" />
 
     <TextView
         android:layout_width="wrap_content"

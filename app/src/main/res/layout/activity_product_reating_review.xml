@@ -30,6 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/readMoreTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -45,6 +46,19 @@
         app:trimExpandedText="show more"
         app:trimLength="200"
         app:trimMode="trimModeLength" />
+
+    <RatingBar
+        style="@style/ProductRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3.5"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readMoreTextView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
