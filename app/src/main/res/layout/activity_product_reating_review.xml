@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:text="abc"
         android:textColor="#ff0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -60,5 +61,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/readMoreTextView" />
 
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="288dp"
+        android:layout_height="17dp"
+        android:max="100"
+        android:progress="40"
+        android:progressDrawable="@drawable/custom_progress_1"
+        android:secondaryProgress="66"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/text_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.497"
+        tools:style="@style/Widget.AppCompat.ProgressBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

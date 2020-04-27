@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke
+        android:width="10dp"
+        android:color="#de461b"
+        android:dashWidth="10dp"
+        android:dashGap="2dp" />
+
+    <!-- Tô màu cho hình-->
+    <solid android:color="#f9d849" />
+
+    <!---->
+    <gradient
+        android:angle="45"
+        android:centerColor="#768087"
+        android:centerX="0.1"
+        android:centerY="0.2"
+        android:endColor="#87CEEB"
+        android:gradientRadius="100%"
+        android:startColor="#000000"
+        android:type="radial" />
+
+    <!-- -->
+    <size
+        android:height="@dimen/wrap_content"
+        android:width="@dimen/wrap_content" />
+
+</shape>
